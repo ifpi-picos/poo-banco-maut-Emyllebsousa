@@ -7,9 +7,13 @@ public class App {
   System.out.println(" digite sua opção: ");
    Scanner scan = new Scanner(System.in);
   int opcao= scan.nextInt();
+
 switch(opcao){
 case 1:
- Conta.Versaldo();
+ System.out.println("nome: ");
+   String nome= scan.nextLine(); 
+   System.out.println("cpf: ");
+   int cpf=scan.nextInt();
 break;
 }
 

@@ -1,12 +1,12 @@
-import java.time.LocalDate;
-import java.util.Scanner;
+
+
 public class Cliente {
   public String nome;
   private int cpf;
-  private LocalDate dtn;
+  private String dtn;
   private String endereco;
   private String [] conta = {"Brasil", "Santader", "Picpay", "Caixa"};
-  public Cliente(String nome, int cpf, LocalDate dtn, String endereco) {
+  public Cliente(String nome, int cpf, String dtn, String endereco) {
     this.nome = nome;
     this.cpf = cpf;
     this.dtn = dtn;
@@ -15,7 +15,7 @@ public class Cliente {
   public int getCpf() {
     return cpf;
   }
-  public LocalDate getDtn() {
+  public String getDtn() {
     return dtn;
   }
    public String getEndereco() {
@@ -24,12 +24,9 @@ public class Cliente {
    public String[] getConta() {
     return conta;
   }
-Scanner scan = new Scanner(System.in);
-  public void Cadastro (String nome, int cpf, LocalDate dtn, String endereço){
-    System.out.println("nome: ");
-   nome= scan.nextLine(); 
-   System.out.println("cpf: ");
-   cpf=scan.nextInt();
+
   
-  }
+    
+  
+  
 }
