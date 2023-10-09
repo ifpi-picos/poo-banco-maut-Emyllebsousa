@@ -24,7 +24,7 @@ public class Cliente {
    public String[] getConta() {
     return conta;
   }
-Scanner scan= new Scanner(System.in);
+Scanner scan = new Scanner(System.in);
   public void Cadastro (String nome, int cpf, LocalDate dtn, String endereço){
     System.out.println("nome: ");
    nome= scan.nextLine(); 
