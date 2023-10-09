@@ -25,7 +25,7 @@ public class Endereço {
     }
     
     public int getNumero() {
-        return numero;
+        return numero
     }
 
  
