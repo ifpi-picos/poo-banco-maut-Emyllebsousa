@@ -1,14 +1,13 @@
-import java.util.ArrayList;
 //--------------------------------CLASSE-----------------------------------------------
 public class Cliente {
 
   public String nome;
-  private int cpf;
+  private final String cpf;
   private String dtn;
   private Endereco endereco;
  
 // ---------------------------------METODO CONSTRTOR-------------------------------------
-  public Cliente(String nome, int cpf, String dtn, Endereco endereco) {
+  public Cliente(String nome, String cpf, String dtn, Endereco endereco) {
     this.nome = nome;
     this.cpf = cpf;
     this.dtn = dtn;
@@ -18,8 +17,11 @@ public class Cliente {
   public String getNome() {
    return nome;
   }
+   public void setNome(String nome) {
+    this.nome = nome;
+  }
 
-  public int getCpf() {
+  public String getCpf() {
     return cpf;
   }
 
@@ -30,6 +32,10 @@ public class Cliente {
   public Endereco getEndereco() {
     return endereco;
   }
+  public void setEndereco(Endereco endereco) {
+    this.endereco = endereco;
+  }
+
 
 
 }
