@@ -1,10 +1,11 @@
+import java.util.ArrayList;
 
 public class Cliente {
   public String nome;
   private int cpf;
   private String dtn;
   private Endereco endereco;
-  private String[] conta = { "Brasil", "Santader", "Picpay", "Caixa" };
+  ArrayList<String> Conta= new ArrayList<String>();
 
   public Cliente(String nome, int cpf, String dtn, Endereco endereco) {
     this.nome = nome;
@@ -25,8 +26,5 @@ public class Cliente {
     return endereco;
   }
 
-  public String[] getConta() {
-    return conta;
-  }
 
 }

@@ -1,3 +1,4 @@
+import java.util.ArrayList;
 
 public class Transacao {
    
@@ -9,7 +10,7 @@ public Transacao(String dth, Double valor, String descricao) {
         this.dth = dth;
         this.valor = valor;
         this.descricao = descricao;
-    
+        
     }
     ///////////////////////////////////////////////////////////////////////////////////////////////
      public String getDth() {
