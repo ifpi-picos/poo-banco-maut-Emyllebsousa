@@ -1,28 +1,28 @@
 
 // ------------------------------------------ CLASSE E SEUS ATRIBUTOS----------------------------------------------
 public class Conta {
-    private int numeroAge;
-    private int numerocon;
+    private String numeroAge= "0001";
+    private static int qtdcon= 1;
+    private final int numero;
     private double saldo;
     private Cliente cliente;
+
     
     // -----------------------------------------METODO CONSTRUTOR------------------------------------
-    public Conta(int numeroAge, int numerocon, double saldo, Cliente cliente ) {
-        this.numeroAge = numeroAge;
-        this.numerocon = numerocon;
-        this.saldo = saldo;
+    public Conta( Cliente cliente, int numero) {
+        this.numero=++qtdcon;
         this.cliente = cliente;
         
     }
     
 
     // ------------------------------------GET E SET-----------------------------------------------
-    public int getNumeroAge() {
+    public String getNumeroAge() {
         return numeroAge;
     }
 
-    public int getNumerocon() {
-        return numerocon;
+    public int getqtdcon() {
+        return qtdcon;
     }
 
     public  double getSaldo() {
@@ -39,6 +39,9 @@ public class Conta {
 
     public void setCliente(Cliente cliente) {
         this.cliente = cliente;
+    }
+    public int getNumero() {
+        return numero;
     }
 
 //---------------------------------------------------------------------------------------------------------------------
