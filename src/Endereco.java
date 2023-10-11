@@ -19,6 +19,9 @@ public class Endereco {
     public String getRua() {
         return rua;
     }
+    public int getNumero() {
+        return numero;
+    }
 
     public String getBairro() {
         return bairro;
@@ -28,9 +31,7 @@ public class Endereco {
         return cidade;
     }
 
-    public int getNumero() {
-        return numero;
-    }
+    
    
  @Override
 public String toString(){
