@@ -31,5 +31,9 @@ public class Endereco {
     public int getNumero() {
         return numero;
     }
-
+   
+ @Override
+public String toString(){
+return "Endereço:/n"+ "Rua:"+rua + "-Nº"+numero + "Bairro: "+ bairro+ "Cidade"+ cidade; 
+}
 }
