@@ -6,7 +6,7 @@ public class Cliente {
   private int cpf;
   private String dtn;
   private Endereco endereco;
-  ArrayList<String> Conta= new ArrayList<String>();
+ 
 // ---------------------------------METODO CONSTRTOR-------------------------------------
   public Cliente(String nome, int cpf, String dtn, Endereco endereco) {
     this.nome = nome;

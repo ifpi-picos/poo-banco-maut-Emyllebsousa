@@ -41,4 +41,29 @@ public class Conta {
         this.cliente = cliente;
     }
 
+//---------------------------------------------------------------------------------------------------------------------
+
+    public void Despositar(double valor, Conta conta ){
+        double saldoAtual= conta.getSaldo();
+        double novoSaldo = saldoAtual + valor;
+        conta.setSaldo(novoSaldo);
+  
+  }
+      public void Sacar( double valor, Conta conta){
+      double saldoAtual = conta.getSaldo();
+      double novoSaldo= saldoAtual + valor;
+       System.out.println(novoSaldo);
+      }
+     
+      public void Versaldo(double saldo){
+         System.out.println(saldo);
+  
+  }
+  public void Transfirir(double valor, String destino , Conta conta){
+     double nvSaldo= conta.getSaldo();
+     nvSaldo=nvSaldo-valor;
+  
+  
+  
+  }
 }

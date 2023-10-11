@@ -3,6 +3,12 @@ import java.util.Scanner;;
 public class App {
   public static void main(String[] args) throws Exception {
 
+    Cliente a = new Cliente(null, 0, null, null);
+
+    Conta c1 = new Conta(0, 0, 0, a);
+    Conta c2 = new Conta(0, 0, 0, a);
+    Conta c3 = new Conta(0, 0, 0, a);
+
     System.out.println("Menu/n 1-saldo /n");
     System.out.println(" digite sua opção: ");
     Scanner scan = new Scanner(System.in);
