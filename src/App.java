@@ -21,8 +21,8 @@ public class App {
         System.out.println("bairro: ");
         String bairro = scan.nextLine();
         Endereco endereco = new Endereco("Rua Flores", "Centro", "Picos",123);
-System.out.println(endereco.toString());
-       // Cliente cliente = new Cliente(nome, cpf, dtn, bairro);
+        System.out.println(endereco.toString());
+        Cliente cliente = new Cliente(nome, cpf, dtn, endereco);
         break;
     }
 
