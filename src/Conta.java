@@ -6,11 +6,7 @@ public class Conta {
     private double saldo;
     private Cliente cliente;
     
-
-    // ----------------------------------------------------------------------------------------------
-
-    // -----------------------------------------METODO
-    // CONSTRUTOR------------------------------------
+    // -----------------------------------------METODO CONSTRUTOR------------------------------------
     public Conta(int numeroAge, int numerocon, double saldo, Cliente cliente ) {
         this.numeroAge = numeroAge;
         this.numerocon = numerocon;
@@ -18,10 +14,9 @@ public class Conta {
         this.cliente = cliente;
         
     }
-    // ----------------------------------------------------------------------------------------------
+    
 
-    // ------------------------------------GET E
-    // SET-----------------------------------------------
+    // ------------------------------------GET E SET-----------------------------------------------
     public int getNumeroAge() {
         return numeroAge;
     }
@@ -45,12 +40,5 @@ public class Conta {
     public void setCliente(Cliente cliente) {
         this.cliente = cliente;
     }
-
-
-    
-
-    // -----------------------------------------------------------------------------
-
-    // -------------------------METODOS-----------------------------------
 
 }

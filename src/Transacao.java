@@ -1,18 +1,17 @@
-import java.util.ArrayList;
-
+//---------------------------------------CLASSE ---------------------
 public class Transacao {
    
     private String dth;
     private double valor;
     private String descricao;
-
+//-------------------------------------METODO-------------------------
 public Transacao(String dth, Double valor, String descricao) {
         this.dth = dth;
         this.valor = valor;
         this.descricao = descricao;
         
     }
-    ///////////////////////////////////////////////////////////////////////////////////////////////
+//-----------------------------------GET E SET-------------------------
      public String getDth() {
         return dth;
     }
@@ -48,4 +47,5 @@ public void Despositar(double valor, Conta conta ){
        System.out.println(saldo);
 
 }
+
 }
