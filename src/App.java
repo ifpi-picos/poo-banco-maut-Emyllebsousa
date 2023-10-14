@@ -3,7 +3,7 @@ import java.util.Scanner;;
 public class App {
   public static void main(String[] args) throws Exception {
 
-    Cliente a = new Cliente(null, 0, null, null);
+    Cliente a = new Cliente("Emylle",000, "00/00/0000", null);
 
     Conta c1 = new Conta(0, 0, 0, a);
     Conta c2 = new Conta(0, 0, 0, a);
@@ -14,6 +14,7 @@ public class App {
     Scanner scan = new Scanner(System.in);
     int opcao = scan.nextInt();
 
+    do {
     switch (opcao) {
       case 1:
         System.out.println("nome: ");
@@ -28,9 +29,12 @@ public class App {
         String bairro = scan.nextLine();
         Endereco endereco = new Endereco("Rua Flores", "Centro", "Picos",123);
         System.out.println(endereco.toString());
-        Cliente cliente = new Cliente(nome, cpf, dtn, endereco);
+   
         break;
     }
+  while (true) {
+    
+  }
 
   }
 }

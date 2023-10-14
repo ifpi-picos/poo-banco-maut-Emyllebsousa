@@ -5,7 +5,7 @@ public class Transacao {
     private double valor;
     private String tipo;
 //-------------------------------------METODO-------------------------
-public Transacao(String dth, Double valor, String descricao) {
+public Transacao(String dth, Double valor, String tipo) {
         this.dth = dth;
         this.valor = valor;
         this.tipo = tipo;
@@ -31,4 +31,6 @@ public Transacao(String dth, Double valor, String descricao) {
         this.tipo = tipo;
     }
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
 }
+
