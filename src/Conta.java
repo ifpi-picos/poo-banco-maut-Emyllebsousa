@@ -20,11 +20,8 @@ public class Conta {
     }
     
 
-    public Conta(int i, int j, int k, Cliente a) {
-    }
 
-
-    --------------------------------
+    //--------------------------------
     public String getNumeroAge() {
         return numeroAge;
     }

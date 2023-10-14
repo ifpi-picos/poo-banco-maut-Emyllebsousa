@@ -3,11 +3,11 @@ import java.util.Scanner;;
 public class App {
   public static void main(String[] args) throws Exception {
 
-    Cliente a = new Cliente("Emylle",000, "00/00/0000", null);
+    Cliente a = new Cliente("Emylle","000", "00/00/0000", null);
 
-    Conta c1 = new Conta(001, 0, 0, a);
-    Conta c2 = new Conta(002, 0, 0, a);
-    Conta c3 = new Conta(003, 0, 0, a);
+    Conta c1 = new Conta();
+    Conta c2 = new Conta();
+    Conta c3 = new Conta();
 
     System.out.println("Menu/n 1-saldo /n");
     System.out.println(" digite sua opção: ");
@@ -32,9 +32,5 @@ public class App {
    
         break;
     }
-  while (true) {
-    
+    }while (true);
   }
-
-  }
-}

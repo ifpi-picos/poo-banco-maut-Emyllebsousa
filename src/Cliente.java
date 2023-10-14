@@ -7,7 +7,7 @@ public class Cliente {
   private Endereco endereco;
  
 // ---------------------------------METODO CONSTRTOR-------------------------------------
-  public Cliente(String nome, int i, String dtn, Endereco endereco) {
+  public Cliente(String nome, String i, String dtn, Endereco endereco) {
     this.nome = nome;
     this.cpf = i;
     this.dtn = dtn;
