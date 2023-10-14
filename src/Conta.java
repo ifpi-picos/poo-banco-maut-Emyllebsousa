@@ -8,7 +8,7 @@ public class Conta {
     private String numeroAge= "0001";
     private static int qtdcon= 1;
     private final int numero;
-    private double saldo;
+    private double saldo=0;
     private Cliente cliente;
     private List <Transacao> transacao;
     
