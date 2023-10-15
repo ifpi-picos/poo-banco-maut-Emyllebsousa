@@ -73,14 +73,8 @@ public class Conta {
         Transacao t = new Transacao(LocalDate.now(), valor, tipo);
         this.transacao.add(t);
     }
-      public void Versaldo(double saldo){
-        this.transacao.forEach(t -> System.out.println(t));
-         System.out.println("Agencia: "+this.numeroAge);
-         System.out.println("Conta: "+this.numero);
-         System.out.println("Saldo: "+this.saldo);
-    
   
-  }
+  
   public void Transfirir(double valor, String destino , Conta conta){
      double nvSaldo= conta.getSaldo();
      nvSaldo=nvSaldo-valor;
