@@ -1,4 +1,8 @@
 package br.edu.ifpi.poo.notificacao;
-public class NotificacaoEmail extends Notificacao{
-    
+public class NotificacaoEmail implements Notificacao{
+    @Override
+    public void enviaNotificacao(String tipo, double valor) {
+       
+        System.out.println("enviando notificacao por email, " + tipo + ", Valor: " + valor);
+    }
 }
