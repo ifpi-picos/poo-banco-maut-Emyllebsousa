@@ -1,4 +1,4 @@
-package br.edu.ifpi.poo.conta1;
+package br.edu.ifpi.poo.conta;
 public abstract class Conta {
     
 }
