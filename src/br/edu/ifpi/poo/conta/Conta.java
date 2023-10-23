@@ -10,12 +10,8 @@ public abstract class Conta {
 
     protected double saldo;
     private String numero;
-    private String numeroag;
     
-   
-        
-
-
+    private String numeroag;
     private Cliente cliente;
 
 
@@ -32,11 +28,17 @@ public abstract class Conta {
     public void saque(double valor){
         this.saldo -=  valor;
     }
-
+    public void doposito(double valor){
+    this.saldo+= valor;
+    
+    }
     public double getSaldo() {
         return saldo;
     }
 
+public String getNumero() {
+        return numero;
+    }
 
 
 }
