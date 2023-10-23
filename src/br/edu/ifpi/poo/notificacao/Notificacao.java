@@ -1,4 +1,5 @@
 package br.edu.ifpi.poo.notificacao;
-public class Notificacao {
-    
+
+public interface Notificacao{
+public void enviaNotificacao(String tipo, double valor);
 }

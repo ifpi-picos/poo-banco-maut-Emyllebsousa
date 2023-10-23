@@ -1,4 +1,4 @@
 package br.edu.ifpi.poo.notificacao;
-public class NotificacaoEmail {
+public class NotificacaoEmail extends Notificacao{
     
 }
