@@ -8,9 +8,10 @@ public class Contacorrente extends Conta {
 
 private double taxa= 0.1;
 
-   // public void ContaCorrente(String numero, double abertura, Notificacao notificacao) {
-       // super(numero, abertura, notificacao);
-    //}
+    public Contacorrente(double saldo, String numero, String numeroag, Cliente cliente, Notificacao notificacao,double taxa) {
+    super(saldo, numero, numeroag, cliente, notificacao);
+    this.taxa = taxa;
+}
 
     public double getTaxa() {
     return taxa;
