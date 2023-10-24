@@ -19,7 +19,7 @@ public class Cliente {
         this.endereco = endereco;
     }
 public void Cadastro(Cliente cliente){
-Scanner scanner = new Scanner(System.in);
+Scanner scanner= new Scanner(System.in);
 System.out.println("Digite seu nome");
 this.nome= scanner.nextLine();
 System.out.println("Digite seu cpf");
