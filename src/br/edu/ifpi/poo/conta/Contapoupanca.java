@@ -19,20 +19,22 @@ private double rendimento;
 
     @Override
     public void transfere(double valor, Conta destino) {
-    
+      sacar(valor);
+      destino.deposito(valor);
     }
 
     @Override
     public void sacar(double valor) {
-      
-      
+      this.saldo-= valor;
+      System.out.println(getSaldo());
     }
 
 
 
     @Override
     public void deposito(double valor) {
-      // TODO Auto-generated method stub
-      throw new UnsupportedOperationException("Unimplemented method 'deposito'");
+      this.saldo+= valor;
+      this.notificacao.enviaNotificacao("deposito", valor);
+      addHistoricoTransacao(valor, "");
     }
 }

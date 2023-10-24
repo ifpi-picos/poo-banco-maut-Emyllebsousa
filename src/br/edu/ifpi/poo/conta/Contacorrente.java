@@ -20,6 +20,7 @@ private double taxa= 0.1;
 public void sacar(double valor) {
     this.saldo-= valor;
     System.out.println(getSaldo());
+    
 }
 public double getTaxa() {
     return taxa;
