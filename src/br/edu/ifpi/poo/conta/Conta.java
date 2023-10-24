@@ -39,6 +39,11 @@ public abstract class Conta {
     public void setNotificacao(Notificacao notificacao) {
         this.notificacao = notificacao;
     }
+    public void exibeExtrato(){
+        this.transacao.forEach(t -> System.out.println(t));
+        System.out.println("Saldo atual: " + this.saldo);
+        System.out.println("################");
+    }
     private void addHistoricoTransacao(double valor, String tipo){
         Transacao t = new Transacao(LocalDate.now(), valor, tipo);
         this.transacao.add(t);
