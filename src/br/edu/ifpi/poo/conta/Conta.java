@@ -9,7 +9,7 @@ import br.edu.ifpi.poo.transacao.Transacao;
 
 public abstract class Conta {
     
-    protectteded double saldo;
+    protected double saldo;
     private String numero;
     private String numeroag;
     private Cliente cliente;
