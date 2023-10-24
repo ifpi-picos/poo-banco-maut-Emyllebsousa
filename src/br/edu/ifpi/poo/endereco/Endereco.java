@@ -7,10 +7,10 @@ public class Endereco {
 
     // -------------------------METODO CONSTRTOR--------------------------
     public Endereco(String rua, String bairro, String cidade, int numero) {
-        this.rua = rua;
-        this.bairro = bairro;
-        this.cidade = cidade;
-        this.numero = numero;
+        this.rua = "Rua das flores";
+        this.bairro = "Centro";
+        this.cidade = "Picos";
+        this.numero = 909;
     }
 
     // ----------------------------GET E SET -----------------------------------
