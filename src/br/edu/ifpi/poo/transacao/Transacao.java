@@ -3,9 +3,9 @@ package br.edu.ifpi.poo.transacao;
 import java.time.LocalDate;
 
 public class Transacao {
-    private LocalDate data;
-    private double valor;
-    private String tipo;
+    public LocalDate data;
+    public double valor;
+    public String tipo;
      
   
     public Transacao(LocalDate data, double valor, String tipo) {
@@ -13,18 +13,12 @@ public class Transacao {
         this.valor = valor;
         this.tipo = tipo;
     }
-    public LocalDate getData() {
-        return data;
-    }
-    public double getValor() {
-        return valor;
-    }
-   
-    public String getTipo() {
-        return tipo;
-    }
-    public void setTipo(String tipo) {
-        this.tipo = tipo;
-    }
+    
+   @Override
+   public String toString(){
+return "Transação {" + "data =" + data 
++ "valor="+ valor + 
+"tipo="+ tipo;
+   }
     
 }
