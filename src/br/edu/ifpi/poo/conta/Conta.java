@@ -9,12 +9,12 @@ import br.edu.ifpi.poo.transacao.Transacao;
 
 public abstract class Conta {
     
-    private double saldo;
+    protectteded double saldo;
     private String numero;
     private String numeroag;
     private Cliente cliente;
     private List <Transacao> transacao;
-    private Notificacao notificacao;
+    protected Notificacao notificacao;
 
     public Conta(double saldo, String numero, String numeroag, Cliente cliente, Notificacao notificacao) {
         this.saldo = saldo;
@@ -43,7 +43,7 @@ public abstract class Conta {
         System.out.println("################");
     }
     
-    private void addHistoricoTransacao(double valor, String tipo){
+    protected void addHistoricoTransacao(double valor, String tipo){
         Transacao t = new Transacao(LocalDate.now(), valor, tipo);
         this.transacao.add(t);
     }

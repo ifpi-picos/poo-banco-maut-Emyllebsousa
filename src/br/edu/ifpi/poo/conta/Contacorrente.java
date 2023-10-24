@@ -18,7 +18,7 @@ private double taxa= 0.1;
 
     @Override
 public void sacar(double valor) {
-    saldo-= valor;
+    this.saldo-= valor;
     System.out.println(getSaldo());
 }
 public double getTaxa() {
