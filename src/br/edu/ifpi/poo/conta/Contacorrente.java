@@ -20,7 +20,7 @@ private double taxa= 0.1;
     @Override
     public void
      transfere(double valor, Conta destino) {
-        // implementar o comportamento da transferencia de ContaCorrente aqui
+       
     }
 
     @Override
