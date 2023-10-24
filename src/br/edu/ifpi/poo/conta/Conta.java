@@ -34,7 +34,7 @@ public abstract class Conta {
     public void doposito(double valor){
     this.saldo+= valor;
     this.notificacao.enviaNotificacao("deposito", valor);
-    
+    addHistoricoTransacao(valor, "");
     }
     public void setNotificacao(Notificacao notificacao) {
         this.notificacao = notificacao;
@@ -48,6 +48,7 @@ public abstract class Conta {
         Transacao t = new Transacao(LocalDate.now(), valor, tipo);
         this.transacao.add(t);
     }
+
     //-----------------------------------------------------------------------------------------------
     public double getSaldo() {
         return saldo;
