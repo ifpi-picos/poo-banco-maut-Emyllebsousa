@@ -27,4 +27,12 @@ private double rendimento;
       
       
     }
+
+
+
+    @Override
+    public void deposito(double valor) {
+      // TODO Auto-generated method stub
+      throw new UnsupportedOperationException("Unimplemented method 'deposito'");
+    }
 }

@@ -13,23 +13,33 @@ private double taxa= 0.1;
     this.cheque= 1.000;
 }
 
- 
+
+   
 
     @Override
-    public void
-     transfere(double valor, Conta destino) {
-       
-    }
-
-    @Override
-    public void sacar(double valor) {
-        
-    }
+public void sacar(double valor) {
+    saldo-= valor;
+    System.out.println(getSaldo());
+}
 public double getTaxa() {
     return taxa;
 }
 
 public double getCheque() {
     return cheque;
+}
+@Override
+public void transfere(double valor, Conta destino) {
+   sacar(valor);
+   destino.deposito(valor);
+}
+
+
+@Override
+public void deposito(double valor) {
+        this.saldo+= valor;
+        this.notificacao.enviaNotificacao("deposito", valor);
+        addHistoricoTransacao(valor, "");
+        
 } 
 }

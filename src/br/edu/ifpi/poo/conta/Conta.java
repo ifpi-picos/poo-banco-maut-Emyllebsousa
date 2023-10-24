@@ -9,7 +9,7 @@ import br.edu.ifpi.poo.transacao.Transacao;
 
 public abstract class Conta {
     
-    protected double saldo;
+    private double saldo;
     private String numero;
     private String numeroag;
     private Cliente cliente;
@@ -31,11 +31,7 @@ public abstract class Conta {
 
     public abstract void sacar(double valor);
 
-    public void doposito(double valor){
-    this.saldo+= valor;
-    this.notificacao.enviaNotificacao("deposito", valor);
-    addHistoricoTransacao(valor, "");
-    }
+    public abstract void deposito(double valor);
 
     public void setNotificacao(Notificacao notificacao) {
         this.notificacao = notificacao;
