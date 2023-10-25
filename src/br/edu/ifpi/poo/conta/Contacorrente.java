@@ -28,27 +28,42 @@ public double getCheque() {
 public void sacar(double valor) {
    if ( saldo + cheque >= valor){
     this.saldo-= valor;
-    System.out.println(getSaldo());
-   }else{
+//-------------------------------------------------------------------------------------------------------------
+    this.notificacao.enviaNotificacao("Saque", valor);
+    addHistoricoTransacao(valor, "saque");
+//--------------------------------------------------------------------------------------------------------------
+
+}else{
     System.out.println("VALOR INDISPONIVEL!");
    }
 }
+//---------------------------------------------------------------------------------------------------------------
 @Override
 public void transfere(double valor, Conta destino) {
    saldo -= valor;
+
    destino.saldo += valor;
+//-----------------------------------------------------------------------------------------------------------------
    qtdTransferencias++;
+
    if(qtdTransferencias>2){
     this.saldo-= valor*taxa;
    }
+   this.notificacao.enviaNotificacao("Transação", valor);
+      addHistoricoTransacao(valor, "Transação");
+//--------------------------------------------------------------------------------------------------------------
 }
 
 @Override
 public void deposito(double valor) {
+   
     if(valor>0){
+
     this.saldo+= valor;
+//-------------------------------------------------------------------------------------------------------------
         this.notificacao.enviaNotificacao("deposito", valor);
         addHistoricoTransacao(valor, "deposito");
+//----------------------------------------------------------------------------------------------------------------------
     }
 }
 

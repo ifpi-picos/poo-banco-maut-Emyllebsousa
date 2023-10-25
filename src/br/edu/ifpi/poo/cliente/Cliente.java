@@ -23,8 +23,8 @@ public class Cliente {
         this.endereco = endereco;
     }
 
-
     //-----------------------------------------------------------------------------------------
+    
     public String getNome() {
         return nome;
     }
