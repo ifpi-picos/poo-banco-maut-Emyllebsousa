@@ -16,5 +16,11 @@ public class App {
         Conta conta2 = new Contapoupanca(0, "002", "222", A, new NotificacaoSms());
        System.out.println("saldo :" + conta1.getSaldo());
        System.out.println("saldo :" + conta2.getSaldo());
+
+       conta1.deposito(90);
+       System.out.println("saldo :" + conta1.getSaldo());
+
+        conta2.deposito(90);
+       System.out.println("saldo :" + conta2.getSaldo());
     }
 }

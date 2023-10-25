@@ -40,7 +40,7 @@ private double rendimento;
 
     @Override
     public void deposito(double valor) {
-      this.saldo+= (valor*getRendimento());
+      this.saldo+= valor*getRendimento();
       this.notificacao.enviaNotificacao("deposito", valor);
       addHistoricoTransacao(valor, "");
     }
