@@ -13,17 +13,13 @@ public class App {
     public static void main(String[] args) throws Exception {
     Cliente A= new Cliente("Emy", "000.000.000-01", "08/03/2005", new Endereco("Rua das Flores", "Centro", "Dom Expedito", 55));
         Conta conta1 = new Contacorrente(50, "001","111", A,new NotificacaoEmail(), 0);
-        Conta conta2 = new Contapoupanca(0, "002", "222", A, new NotificacaoSms());
+        Conta conta2 = new Contapoupanca(50, "002", "222", A, new NotificacaoSms());
        System.out.println("saldo :" + conta1.getSaldo());
        System.out.println("saldo :" + conta2.getSaldo());
 
-    //    conta1.deposito(90);
-    //    System.out.println("saldo :" + conta1.getSaldo());
-
-       conta2.deposito(100);
-      System.out.println("saldo :" + conta2.getSaldo());
-
-    //   conta1.sacar(1500);
+      conta1.transfere(30, conta2);
+      System.out.print(conta2.getSaldo()+ "\n");
       
+      System.out.print(conta1.getSaldo());
     }
 }
