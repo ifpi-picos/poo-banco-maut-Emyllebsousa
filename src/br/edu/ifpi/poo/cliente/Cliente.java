@@ -1,4 +1,6 @@
 package br.edu.ifpi.poo.cliente;
+import java.util.Scanner;
+
 import br.edu.ifpi.poo.endereco.Endereco;
 
 public class Cliente {
@@ -16,13 +18,15 @@ public class Cliente {
         this.endereco = endereco;
     }
 
-    public void Cadastro(String nome, String cpf, String dtn, Endereco endereco) {
-        this.nome = nome;
-        this.cpf = cpf;
-        this.dtn = dtn;
-        this.endereco = endereco;
-    }
-
+    public void Cadastro(Cliente cliente) {
+        Scanner scan= new Scanner(System.in);
+        System.out.println("Digite seu nome: ");
+        this.nome=scan.nextLine();
+        System.out.println("Digite seu cpf: ");
+        this.cpf=scan.nextLine();
+        System.out.println("Digite sua Data de nascimento: ");
+        this.dtn=scan.nextLine();
+      }
     //-----------------------------------------------------------------------------------------
     
     public String getNome() {

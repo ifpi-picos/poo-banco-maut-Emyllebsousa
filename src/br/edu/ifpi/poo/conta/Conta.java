@@ -2,6 +2,7 @@ package br.edu.ifpi.poo.conta;
 import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Scanner;
 
 import br.edu.ifpi.poo.cliente.Cliente;
 import br.edu.ifpi.poo.notificacao.Notificacao;
@@ -26,6 +27,7 @@ public abstract class Conta {
     }
 
     //----------------------------------------------------------------------------------------------------
+    
 
     public abstract void transfere(double valor, Conta destino);
 
