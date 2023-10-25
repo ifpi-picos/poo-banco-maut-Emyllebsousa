@@ -43,13 +43,13 @@ public void transfere(double valor, Conta destino) {
 
    destino.saldo += valor;
 //-----------------------------------------------------------------------------------------------------------------
-   qtdTransferencias++;
 
-   if(qtdTransferencias>2){
-    this.saldo-= valor*taxa;
-   }
-   this.notificacao.enviaNotificacao("Transação", valor);
-      addHistoricoTransacao(valor, "Transação");
+if(qtdTransferencias>2){
+    this.saldo-= valor+ (valor*taxa);
+}
+this.notificacao.enviaNotificacao("Transação", valor);
+addHistoricoTransacao(valor, "Transação");
+qtdTransferencias++;
 //--------------------------------------------------------------------------------------------------------------
 }
 

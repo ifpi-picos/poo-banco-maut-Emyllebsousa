@@ -15,13 +15,17 @@ public class App {
         Conta conta1 = new Contacorrente("001","111", A,new NotificacaoEmail(), 0);
         Conta conta2 = new Contapoupanca("002", "222", A, new NotificacaoSms());
 
+conta1.deposito(150);
+conta1.transfere(10, conta2);
+System.out.println(conta1.getSaldo());
+conta1.transfere(10, conta2);
+System.out.println(conta1.getSaldo());
+conta1.transfere(10, conta2);
+System.out.println(conta1.getSaldo());
+conta1.transfere(10, conta2);
+System.out.println(conta1.getSaldo());
 
-      conta2.deposito(100);
-      System.out.println(conta2.getSaldo());
 
-      conta2.sacar(50);
-      System.out.println(conta2.getSaldo());
-
-      conta1.getSaldo();
+      
     }
 }
