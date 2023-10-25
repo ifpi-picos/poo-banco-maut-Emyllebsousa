@@ -1,4 +1,4 @@
-package br.edu.ifpi.poo.endereco;
+package br.edu.ifpi.poo.entidades;
 public class Endereco {
     private String rua;
     private String bairro;

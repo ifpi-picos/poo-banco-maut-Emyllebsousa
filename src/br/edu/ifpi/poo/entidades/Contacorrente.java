@@ -1,6 +1,5 @@
-package br.edu.ifpi.poo.conta;
+package br.edu.ifpi.poo.entidades;
 
-import br.edu.ifpi.poo.cliente.Cliente;
 import br.edu.ifpi.poo.notificacao.Notificacao;
 
 public class Contacorrente extends Conta {

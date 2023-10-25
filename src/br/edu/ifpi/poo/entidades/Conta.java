@@ -1,12 +1,9 @@
-package br.edu.ifpi.poo.conta;
+package br.edu.ifpi.poo.entidades;
 import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.List;
 
-
-import br.edu.ifpi.poo.cliente.Cliente;
 import br.edu.ifpi.poo.notificacao.Notificacao;
-import br.edu.ifpi.poo.transacao.Transacao;
 
 public abstract class Conta {
     

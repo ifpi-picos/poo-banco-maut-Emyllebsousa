@@ -1,5 +1,4 @@
-package br.edu.ifpi.poo.conta;
-import br.edu.ifpi.poo.cliente.Cliente;
+package br.edu.ifpi.poo.entidades;
 import br.edu.ifpi.poo.notificacao.Notificacao;
 
 // Herança: a classe ContaPoupanca herda todos os atributos e métodos da classe Conta

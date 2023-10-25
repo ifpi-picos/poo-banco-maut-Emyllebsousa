@@ -1,8 +1,8 @@
-import br.edu.ifpi.poo.cliente.Cliente;
-import br.edu.ifpi.poo.conta.Conta;
-import br.edu.ifpi.poo.conta.Contacorrente;
-import br.edu.ifpi.poo.conta.Contapoupanca;
-import br.edu.ifpi.poo.endereco.Endereco;
+import br.edu.ifpi.poo.entidades.Cliente;
+import br.edu.ifpi.poo.entidades.Conta;
+import br.edu.ifpi.poo.entidades.Contacorrente;
+import br.edu.ifpi.poo.entidades.Contapoupanca;
+import br.edu.ifpi.poo.entidades.Endereco;
 import br.edu.ifpi.poo.notificacao.NotificacaoEmail;
 import br.edu.ifpi.poo.notificacao.NotificacaoSms;
 

@@ -1,7 +1,5 @@
-package br.edu.ifpi.poo.cliente;
+package br.edu.ifpi.poo.entidades;
 import java.util.Scanner;
-
-import br.edu.ifpi.poo.endereco.Endereco;
 
 public class Cliente {
 
