@@ -1,7 +1,4 @@
 package br.edu.ifpi.poo.cliente;
-
-
-
 import br.edu.ifpi.poo.endereco.Endereco;
 
 public class Cliente {
