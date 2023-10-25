@@ -45,7 +45,7 @@ public void transfere(double valor, Conta destino) {
 
 @Override
 public void deposito(double valor) {
-    if(valor>saldo){
+    if(valor>0){
     this.saldo+= valor;
         this.notificacao.enviaNotificacao("deposito", valor);
         addHistoricoTransacao(valor, "deposito");

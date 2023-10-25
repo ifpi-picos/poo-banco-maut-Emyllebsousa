@@ -26,14 +26,14 @@ private double rendimento;
     @Override
     public void transfere(double valor, Conta destino) {
       sacar(valor);
-      this.saldo =- (valor* getTaxa());
+      this.saldo =- valor* getTaxa();
       destino.deposito(valor);
       
     }
 
     @Override
     public void sacar(double valor) {
-      this.saldo-= (valor*getTaxasaque());
+      this.saldo-= valor*getTaxasaque();
 
       System.out.println(getSaldo());
     }
