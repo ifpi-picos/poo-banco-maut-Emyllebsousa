@@ -14,7 +14,7 @@ public class App {
     Cliente A= new Cliente("Emy", "000.000.000-01", "08/03/2005", new Endereco("Rua das Flores", "Centro", "Dom Expedito", 55));
         Conta conta1 = new Contacorrente(50, "001","111", A,new NotificacaoEmail(), 0);
         Conta conta2 = new Contapoupanca(0, "002", "222", A, new NotificacaoSms());
-       System.out.println("saldo" + conta1.getSaldo());
-       System.out.println("saldo" + conta2.getSaldo());
+       System.out.println("saldo :" + conta1.getSaldo());
+       System.out.println("saldo :" + conta2.getSaldo());
     }
 }
