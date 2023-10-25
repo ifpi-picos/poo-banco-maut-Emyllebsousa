@@ -9,7 +9,7 @@ private double qtdTransferencias;
 
     public Contacorrente(String numero, String numeroag, Cliente cliente, Notificacao notificacao,double taxa) {
     super(numero, numeroag, cliente, notificacao);
-    this.taxa = taxa;
+    this.taxa = 0.05;
     this.cheque= 1000;
     this.qtdTransferencias = 1;
 }
@@ -39,17 +39,17 @@ public void sacar(double valor) {
 //---------------------------------------------------------------------------------------------------------------
 @Override
 public void transfere(double valor, Conta destino) {
-   saldo -= valor;
-
-   destino.saldo += valor;
 //-----------------------------------------------------------------------------------------------------------------
 
 if(qtdTransferencias>2){
     this.saldo-= valor+ (valor*taxa);
+}else{
+    saldo -= valor;
+    destino.saldo += valor;
 }
+qtdTransferencias++;
 this.notificacao.enviaNotificacao("Transação", valor);
 addHistoricoTransacao(valor, "Transação");
-qtdTransferencias++;
 
     
 }
