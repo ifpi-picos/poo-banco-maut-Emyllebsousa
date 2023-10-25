@@ -5,7 +5,7 @@ public class Endereco {
     private String cidade;
     private int numero;
 
-    // -------------------------METODO CONSTRTOR--------------------------
+// -------------------------METODO CONSTRTOR--------------------------
     public Endereco(String rua, String bairro, String cidade, int numero) {
         this.rua = "Rua das flores";
         this.bairro = "Centro";
@@ -13,7 +13,7 @@ public class Endereco {
         this.numero = 909;
     }
 
-    // ----------------------------GET E SET -----------------------------------
+// ----------------------------GET E SET -----------------------------------
     public String getRua() {
         return rua;
     }
@@ -29,7 +29,7 @@ public class Endereco {
         return cidade;
     }
 
-    
+//-----------------------------------------------------------------------------------------------------
    
  @Override
 public String toString(){
