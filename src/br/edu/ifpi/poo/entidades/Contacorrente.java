@@ -50,6 +50,9 @@ if(qtdTransferencias>2){
 this.notificacao.enviaNotificacao("Transação", valor);
 addHistoricoTransacao(valor, "Transação");
 qtdTransferencias++;
+
+    
+}
 //--------------------------------------------------------------------------------------------------------------
 }
 
