@@ -8,8 +8,8 @@ private double cheque=1000;
 private double taxa= 0.1;
 private double qtdTransferencias;
 
-    public Contacorrente(double saldo, String numero, String numeroag, Cliente cliente, Notificacao notificacao,double taxa) {
-    super(saldo, numero, numeroag, cliente, notificacao);
+    public Contacorrente(String numero, String numeroag, Cliente cliente, Notificacao notificacao,double taxa) {
+    super(numero, numeroag, cliente, notificacao);
     this.taxa = taxa;
     this.cheque= 1000;
     this.qtdTransferencias = 1;
@@ -35,8 +35,8 @@ public void sacar(double valor) {
 }
 @Override
 public void transfere(double valor, Conta destino) {
-   sacar(valor);
-   destino.deposito(valor);
+   saldo -= valor;
+   destino.saldo += valor;
    qtdTransferencias++;
    if(qtdTransferencias>2){
     this.saldo-= valor*taxa;

@@ -14,8 +14,8 @@ private double rendimento;
 
 
 
-    public Contapoupanca(double saldo, String numero, String numeroag, Cliente cliente, Notificacao notificacao) {
-    super(saldo, numero, numeroag, cliente, notificacao);
+    public Contapoupanca(String numero, String numeroag, Cliente cliente, Notificacao notificacao) {
+    super(numero, numeroag, cliente, notificacao);
     this.taxa=0.1;
     this.taxasaque=0.05;
     this.rendimento=0.1;
@@ -33,7 +33,7 @@ private double rendimento;
 
     @Override
     public void sacar(double valor) {
-      this.saldo-= valor * taxasaque;
+      this.saldo-= valor +(valor*taxasaque);
 
       System.out.println(getSaldo());
     }
@@ -41,8 +41,8 @@ private double rendimento;
     @Override
     public void deposito(double valor) {
       if(valor>0){
-      this.saldo += (valor * getRendimento());
-      this.notificacao.enviaNotificacao("deposito", valor);
+        this.saldo += (valor + (valor * 0.1));
+        this.notificacao.enviaNotificacao("deposito", valor);
       addHistoricoTransacao(valor, "deposito");
       }else{
         System.out.println("Deposito nao realizado!!");

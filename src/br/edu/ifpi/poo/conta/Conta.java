@@ -16,13 +16,13 @@ public abstract class Conta {
     private List <Transacao> transacao;
     protected Notificacao notificacao;
 
-    public Conta(double saldo, String numero, String numeroag, Cliente cliente, Notificacao notificacao) {
-        this.saldo = saldo;
+    public Conta(String numero, String numeroag, Cliente cliente, Notificacao notificacao) {
         this.numero = numero;
         this.numeroag = numeroag;
         this.cliente = cliente;
         this.notificacao = notificacao;
         this.transacao= new ArrayList<>();
+        this.saldo = 0.0;
     }
 
     //----------------------------------------------------------------------------------------------------

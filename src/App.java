@@ -12,14 +12,14 @@ public class App {
 
     public static void main(String[] args) throws Exception {
     Cliente A= new Cliente("Emy", "000.000.000-01", "08/03/2005", new Endereco("Rua das Flores", "Centro", "Dom Expedito", 55));
-        Conta conta1 = new Contacorrente(50, "001","111", A,new NotificacaoEmail(), 0);
-        Conta conta2 = new Contapoupanca(50, "002", "222", A, new NotificacaoSms());
-       System.out.println("saldo :" + conta1.getSaldo());
-       System.out.println("saldo :" + conta2.getSaldo());
+        Conta conta1 = new Contacorrente("001","111", A,new NotificacaoEmail(), 0);
+        Conta conta2 = new Contapoupanca("002", "222", A, new NotificacaoSms());
 
-      conta1.transfere(30, conta2);
-      System.out.print(conta2.getSaldo()+ "\n");
-      
-      System.out.print(conta1.getSaldo());
+
+      conta2.deposito(100);
+      System.out.println(conta2.getSaldo());
+
+      conta2.sacar(50);
+      System.out.println(conta2.getSaldo());
     }
 }
