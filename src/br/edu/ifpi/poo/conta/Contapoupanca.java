@@ -40,9 +40,13 @@ private double rendimento;
 
     @Override
     public void deposito(double valor) {
+      if(valor>0){
       this.saldo+= valor*getRendimento();
       this.notificacao.enviaNotificacao("deposito", valor);
       addHistoricoTransacao(valor, "");
+      }else{
+        System.out.println("Deposito nao realizado!!");
+      }
     }
 public double getTaxa() {
   return taxa;

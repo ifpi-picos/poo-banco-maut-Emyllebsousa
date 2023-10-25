@@ -20,7 +20,10 @@ public class App {
        conta1.deposito(90);
        System.out.println("saldo :" + conta1.getSaldo());
 
-        conta2.deposito(90);
-       System.out.println("saldo :" + conta2.getSaldo());
+    //     conta2.deposito(100);
+    //    System.out.println("saldo :" + conta2.getSaldo());
+
+    //    conta1.sacar(1500);
+    //     System.out.println("saldo :" + conta1.getSaldo());
     }
 }
