@@ -22,6 +22,6 @@ public class App {
       conta2.sacar(50);
       System.out.println(conta2.getSaldo());
 
-      
+      conta1.getSaldo();
     }
 }
