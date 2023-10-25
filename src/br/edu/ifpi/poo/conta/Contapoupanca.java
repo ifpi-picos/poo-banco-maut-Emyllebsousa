@@ -26,14 +26,14 @@ private double rendimento;
     @Override
     public void transfere(double valor, Conta destino) {
       sacar(valor);
-      this.saldo =- valor* getTaxa();
+      this.saldo =- valor * taxa;
       destino.deposito(valor);
       
     }
 
     @Override
     public void sacar(double valor) {
-      this.saldo-= valor*getTaxasaque();
+      this.saldo-= valor * taxasaque;
 
       System.out.println(getSaldo());
     }
@@ -41,7 +41,7 @@ private double rendimento;
     @Override
     public void deposito(double valor) {
       if(valor>0){
-      this.saldo+= valor*getRendimento();
+      this.saldo += valor * getRendimento();
       this.notificacao.enviaNotificacao("deposito", valor);
       addHistoricoTransacao(valor, "");
       }else{
